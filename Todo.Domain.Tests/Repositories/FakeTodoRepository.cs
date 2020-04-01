@@ -1,3 +1,4 @@
+using System;
 using Todo.Domain.Entities;
 using Todo.Domain.Repositories;
 
@@ -13,6 +14,11 @@ namespace Todo.Domain.Tests.Repositories
         public void Update(TodoItem todo)
         {
 
+        }
+
+        public TodoItem GetById(Guid id, string user)
+        {   
+            return new TodoItem("Título Aqui", DateTime.Now, "nicolasplaisant");
         }
     }
 }
